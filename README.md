@@ -13,7 +13,7 @@
   - **Output**: A GitHub repository with code, report or presentation that includes insights, methodologies, and conclusions.
   - **Evaluation**: Accuracy of predictions, creativity in approach, clarity of presentation, and depth of insights.
 
-  - **Data**: [Movie Metadata](./data/movie_metadata.csv)
+  - **Data**: **Movie Metadata** ([./data/p1_movie_metadata.csv](./data/p1_movie_metadata.csv))
 
 ## Problem 2 : Data Engineering Challenge (:TODO:)
 
