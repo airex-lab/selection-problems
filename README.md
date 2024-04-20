@@ -15,21 +15,11 @@
 
   - **Data**: **Movie Metadata** ([./data/p1_movie_metadata.csv](./data/p1_movie_metadata.csv))
 
-## Problem 2 : Data Engineering Challenge (:TODO:)
+## Problem 2 : Data Engineering Challenge 
 
 
 
-
-Submission Requirements:
-Submit the structured CSV file bbc_articles.csv.
-Provide the Python code used to preprocess the data and train the text classification model.
-Include a brief report or documentation summarizing the preprocessing steps, model architecture, and evaluation results.
-Additional Notes:
-Ensure that your code is well-commented and follows best practices for readability and maintainability.
-Use libraries like pandas, scikit-learn, NLTK, SpaCy, or any other suitable libraries for data preprocessing and model training.
-Experiment with different tokenization techniques, preprocessing steps, and machine learning algorithms to achieve the best performance.
-Provide any necessary instructions or requirements for running your code, such as package dependencies or environment setup.
-  - **Description**: You are provided with a zip file named data.zip, which contains a folder named BBC_articles. Inside this folder are text files named as "articleID_category", where "articleID" corresponds to the unique identifier of the article and "category" denotes the category of the article. Your task is to structure the data by creating a CSV file with appropriate columns. Then, you need to write code to read the CSV data, tokenize the text, and train a text classification model using NLP techniques..
+  - **Description**: You are provided with a [zip file](./data/data.zip) named data.zip, which contains a folder named BBC_articles. Inside this folder are text files named as "articleID_category", where "articleID" corresponds to the unique identifier of the article and "category" denotes the category of the article. Your task is to structure the data by creating a CSV file with appropriate columns. Then, you need to write code to read the CSV data, tokenize the text, and prepare the datset to have numerical features using vectorization. Goal is to clean and prepare the dataset so that in can be trained using NLP-classification techniques.
   - **Task1 (Data Structuring)**: 
     - Unzip the data.zip file to access the BBC_articles folder.
     - Inside the BBC_articles folder, each text file is named as "articleID_category", where "articleID" is a unique identifier and "category" is the category of the article.
@@ -40,15 +30,26 @@ Provide any necessary instructions or requirements for running your code, such a
  - **Task 2 (Data Preprocessing for Model Training)**: 
         
      - Read the bbc_articles.csv file into a DataFrame using Python.
-     - Tokenize the text data using a suitable tokenizer (e.g., NLTK, SpaCy).
+     - Tokenize the text data using a suitable tokenizer (e.g., NLTK, SpaCy)(Even better if you perform custom tokenization.)
      - Perform any necessary preprocessing steps such as lowercasing, removing stopwords, punctuation, etc.
-     - Split the dataset into training and testing subsets.
-     - Train a text classification model using any suitable algorithm (e.g., Naive Bayes, Logistic Regression, SVM, Neural Networks).
-     - Evaluate the trained model's performance on the testing dataset using appropriate metrics (e.g., accuracy, precision, recall, F1-score).
-     - Optionally, you can perform hyperparameter tuning to optimize the model's performance.
-  - **Output**: A working prototype or detailed architecture proposal.
-  - **Evaluation**: Efficiency, scalability, and innovation in the designed pipeline.
-
+     - Make a new csv file with numerical features and given labels.
+     - Note: Features are typically derived through text vectorization    techniques such as:
+        - Bag-of-Words (BoW): Each feature represents the count or frequency of each word in the document.
+        - TF-IDF (Term Frequency-Inverse Document Frequency): Each feature represents the TF-IDF score of each word in the document.
+        - Word Embeddings: Each feature represents the vector representation of each word in the document (e.g., Word2Vec, GloVe). 
+     - You are free to choose how you vectorize to get the feature   
+  - **Submission Requirements**:
+  
+     - Submit the structured CSV file bbc_articles.csv.
+     - Submit final datset as a CSV file containing numerical features.
+        >(name it as vectorized_dataset.csv).
+     - Provide the Python code used to preprocess the data and vectorize ot for the text classification.
+     - Include a brief report or documentation summarizing the preprocessing steps, and what methods you adopted for featurization.
+     - Additional Notes:
+        - Ensure that your code is well-commented and follows best practices for readability and maintainability.
+    
+        - Provide any necessary instructions or requirements for running your code, such as package dependencies or environment setup.
+     
 ## Problem 3 : Machine Learning Engineering Challenge
 
   - **Goal**: Build a machine learning model and deploy it.
