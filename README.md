@@ -19,7 +19,7 @@
 
 
 
-  - **Description**: You are provided with a [zip file](./data/data.zip) named data.zip, which contains a folder named BBC_articles. Inside this folder are text files named as "articleID_category", where "articleID" corresponds to the unique identifier of the article and "category" denotes the category of the article. Your task is to structure the data by creating a CSV file with appropriate columns. Then, you need to write code to read the CSV data, tokenize the text, and prepare the datset to have numerical features using vectorization. Goal is to clean and prepare the dataset so that in can be trained using NLP-classification techniques.
+  - **Description**: You are provided with a zip file named [data.zip](./data/data.zip), which contains a folder named BBC_articles. Inside this folder are text files named as "articleID_category", where "articleID" corresponds to the unique identifier of the article and "category" denotes the category of the article. Your task is to structure the data by creating a CSV file with appropriate columns. Then, you need to write code to read the CSV data, tokenize the text, and prepare the dataset to have numerical features using vectorization. Goal is to clean and prepare the dataset so that in can be trained using NLP-classification techniques.
   - **Task1 (Data Structuring)**: 
     - Unzip the data.zip file to access the BBC_articles folder.
     - Inside the BBC_articles folder, each text file is named as "articleID_category", where "articleID" is a unique identifier and "category" is the category of the article.
@@ -60,4 +60,3 @@
   - **Data**: https://www.cs.toronto.edu/~kriz/cifar.html (use the CIFAR-10 version)
 
 
-test
